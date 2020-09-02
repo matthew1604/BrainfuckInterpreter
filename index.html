@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brainfuck Interpreter</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <input type="button" id="run-btn" value="Run">
+                <input type="button" id="zero-btn" value="Zero">
+                <select id="output-type">
+                    <option value="0">ASCII</option>
+                    <option value="1">Decimal</option>
+                    <option value="2">Binary</option>
+                    <option value="3">Hexadecimal</option>
+                    <option value="4">Octal</option>
+                </select>
+                <input type="number" id="delay" value="2"> (ms)
+            </div>
+            <div>
+                <textarea id="input" rows="10"></textarea> 
+            </div>
+            <div>
+                <div id="table-output-div">
+                    <table id="table-output">
+                    </table>
+                </div>
+                <div>
+                    <textarea id="output" rows="5" disabled></textarea> 
+                </div>
+                <div>
+                    <select id="input-type">
+                        <option value="0">ASCII</option>
+                        <option value="1">Decimal</option>
+                        <option value="2">Binary</option>
+                        <option value="3">Hexadecimal</option>
+                        <option value="4">Octal</option>
+                    </select>
+                    <input type="text" id="input-program" placeholder="Input in program">
+                </div>
+            </div>
+        </div>
+        <div id="label">
+                [<span id="cell-nb"></span>] : '<span id="label-value"></span>'
+        </div>
+
+        <script src="js/brainfuckinterpreter.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
